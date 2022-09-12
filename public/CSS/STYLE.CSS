@@ -88,6 +88,29 @@
   width: 25px;
   border-radius: 5px;
   background-color: black;
+  /* shop at emporium*/
+}
+
+.Shop_at {
+  background-image: url("./public/IMAGE/products/img/slider-1.jpg");
+}
+
+.titre_h3 {
+  color: #DC143C;
+}
+
+.shop_at_emporium {
+  text-align: center;
+}
+
+.sale_items {
+  border: solid 1px #DC143C;
+  border-radius: 25px;
+  background-color: #DC143C;
+  height: 40px;
+  width: 150px;
+  color: white;
+  /*  fin de shop at emporium*/
 }
 
 /*# sourceMappingURL=style.css.map */
