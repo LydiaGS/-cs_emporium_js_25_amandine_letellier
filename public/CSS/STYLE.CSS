@@ -1,0 +1,93 @@
+/*navbarre*/
+.emporium {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.pos-f-t {
+  background-color: white;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10em;
+  background-color: white;
+  position: fixed-end;
+  color: black;
+  text-decoration: none;
+}
+
+.btn_nav {
+  gap: 15em;
+  display: flex;
+}
+
+.nav {
+  color: black;
+  list-style-type: none;
+  style-decoration: none;
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  text-decoration: none;
+  background-color: white;
+}
+
+.navbarr_all {
+  gap: 2em;
+  justify-content: left;
+  display: flex;
+  align-items: left;
+  text-decoration: none;
+  background-color: white;
+}
+
+.navbarre {
+  gap: 2em;
+  justify-content: left;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  background-color: white;
+  text-decoration: none;
+}
+
+.btn_all {
+  gap: 0.5em;
+  display: flex;
+}
+
+.connexion {
+  border: gray;
+  background-color: gray;
+  color: white;
+  height: 2em;
+  width: 6em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.btn_1 {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  border: gray !important;
+  background-color: white;
+}
+
+.btn_2 {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
