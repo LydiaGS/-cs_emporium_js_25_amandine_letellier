@@ -81,6 +81,7 @@ let div_20=document.createElement('div')
 let titres8= document.createElement('p')
 let texte8=document.createTextNode('$420.00')
 let grande_div5 =document.createElement('div')
+
 export default{
     btn_1,
     btn_2,

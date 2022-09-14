@@ -4,6 +4,7 @@
 }
 body {
   font-family: police;
+  --text-color: white;
   /*navbarre*/
 }
 
@@ -121,6 +122,8 @@ body {
 
 .titre_h3 {
   color: #de4846;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 .sale_items {
@@ -137,7 +140,7 @@ body {
 /* Section 3images*/
 .texte_9 {
   position: relative;
-  height: 450px;
+  height: 400px;
 }
 
 .img2 {
@@ -149,8 +152,10 @@ body {
 
 .txt0 {
   z-index: 1;
-  color: white;
+  color: var(--text-color);
   font-size: 50px;
+  border-bottom: 0.05em solid var(--text-color);
+  padding: 0 1.2em;
 }
 
 .imge1 {
