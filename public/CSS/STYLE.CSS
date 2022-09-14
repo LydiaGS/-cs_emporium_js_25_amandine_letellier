@@ -1,9 +1,19 @@
-/*navbarre*/
+@font-face {
+  font-family: police;
+  src: url(./Poppins/Poppins-semibold);
+}
+body {
+  font-family: police;
+  /*navbarre*/
+}
+
 .emporium {
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .pos-f-t {
@@ -17,7 +27,7 @@
   gap: 10em;
   background-color: white;
   position: fixed-end;
-  color: black;
+  color: #aaafb8;
   text-decoration: none;
 }
 
@@ -36,7 +46,7 @@
   align-items: center;
   text-align: left;
   text-decoration: none;
-  background-color: white;
+  text-align: center;
 }
 
 .navbarr_all {
@@ -45,7 +55,6 @@
   display: flex;
   align-items: left;
   text-decoration: none;
-  background-color: white;
 }
 
 .navbarre {
@@ -54,7 +63,6 @@
   display: flex;
   align-items: left;
   text-align: left;
-  background-color: white;
   text-decoration: none;
 }
 
@@ -64,8 +72,8 @@
 }
 
 .connexion {
-  border: gray;
-  background-color: gray;
+  border: #6c757d;
+  background-color: #6c757d;
   color: white;
   height: 2em;
   width: 6em;
@@ -79,7 +87,7 @@
   height: 25px;
   width: 25px;
   border-radius: 5px;
-  border: gray !important;
+  border: solid 0.1px #e3e5e7 !important;
   background-color: white;
 }
 
@@ -88,36 +96,329 @@
   width: 25px;
   border-radius: 5px;
   background-color: black;
-  /* shop at emporium*/
 }
 
+/* fin de la navbarre*/ 
+/*section shop_at*/
 .Shop_at {
-  background-image: url("./public/IMAGE/products/img/slider-1.jpg");
+  height: 350px;
+  text-align: left;
+}
+
+.image_t {
+  height: 250px;
+  width: 350px;
+  justify-content: right;
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  padding: 45px;
 }
 
 .titre_h3 {
-  color: #DC143C;
-}
-
-.shop_at_emporium {
-  text-align: center;
+  color: #de4846;
 }
 
 .sale_items {
-  border: solid 1px #DC143C;
+  border: solid 1px #de4846;
   border-radius: 25px;
-  background-color: #DC143C;
+  background-color: #de4846;
   height: 40px;
   width: 150px;
   color: white;
-  /*  fin de shop at emporium*/
 }
 
-.trois_images {
-  display: flex;
-  width: 600px !important;
-  height: 150px;
-  gap: 2.5em;
+/*  section shop_at*/
+ *  /* fin section shop_at*/
+/* Section 3images*/
+.texte_9 {
+  position: relative;
+  height: 450px;
 }
+
+.img2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+.txt0 {
+  z-index: 1;
+  color: white;
+  font-size: 50px;
+}
+
+.imge1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+.img3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+/*  fin Section 3images*/
+/* recent product*/
+.titre_h2_2 {
+  text-align: center;
+}
+
+.image_3-1 {
+  height: 150px;
+  width: 150px;
+  gap: 2em;
+  display: flex;
+}
+
+.image_3-2 {
+  height: 150px;
+  width: 150px;
+  gap: 2em;
+  display: flex;
+}
+
+.image_3-3 {
+  height: 150px;
+  width: 150px;
+  gap: 2em;
+  display: flex;
+}
+
+.text_3-3 {
+  display: flex;
+  gap: 10em;
+}
+
+.image_3-2 {
+  display: flex;
+  gap: 10em;
+}
+
+/*fin recent product*/
+/*Discover Thousands Of Great Products*/
+.Discover_Thousands_Of_Great_Products {
+  background-image: url("../IMAGE/products/img/cta-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.learn_more {
+  border: solid 1px #DC143C;
+  background-color: #DC143C;
+  height: 30px;
+  width: 150px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.learne_more h2 {
+  text-align: center;
+  align-items: center;
+}
+
+/* fin Discover Thousands Of Great Products*/
+/* carouselle*/
+.carousel {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+
+.colo_red {
+  color: #DC143C;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.change {
+  text-decoration: line-through;
+}
+
+.carousel_image {
+  height: 350px;
+  width: 350px;
+}
+
+.title_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre_caroussel {
+  text-align: center;
+}
+
+.boule {
+  border: solid 1px black;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+}
+
+.bulle {
+  gap: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.rounds {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  border: solid 1px #DC143C;
+  background-color: #DC143C;
+  border-radius: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cercles_reds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.cerle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.rondes {
+  display: flex;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_grande {
+  justify-content: center;
+  align-items: center;
+}
+
+/* fin carouselle*/
+/* learne more 3div*/
+.fontowsone_3 {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.fontowsone {
+  background-color: #f3f2f3;
+  height: 400px;
+  width: 550PX;
+}
+
+.fa-sharp {
+  height: 80px;
+  color: #70757c;
+  align-items: center;
+}
+
+.font {
+  color: white;
+  background-color: #5c6166;
+  height: 25px;
+  width: 150px;
+  border: solid 1px gray;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* fin learne more 3div*/
+/*footer*/    
+.footer {
+  height: 250px;
+  background-color: #343a40;
+  color: #cccec9;
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+}
+.footer .tag_cloud {
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.partie_1 {
+  border: solid 0.2px white;
+  border-radius: 0.5em;
+  background-color: #2F4F4F;
+  color: #cccec9;
+  width: 80px;
+  border-radius: 0.5em;
+  background-color: #2F4F4F;
+  color: #cccec9;
+  width: 80px;
+  border-radius: 0.5em;
+  background-color: #2F4F4F;
+  color: #cccec9;
+  width: 80px;
+  border: solid 0.2px white;
+  border-radius: 0.5em;
+  background-color: #2F4F4F;
+  color: #cccec9;
+  width: 80px;
+  border: solid 0.2px white;
+  border-radius: 0.5em;
+  background-color: #2F4F4F;
+  color: #cccec9;
+  width: 80px;
+  border: solid 0.2px white;
+  border-radius: 0.5em;
+  background-color: #2F4F4F;
+  color: #cccec9;
+  width: 80px;
+}
+.partie_1 .partie_2 {
+  border: solid 0.2px white;
+}
+.partie_1 .partie_3 {
+  border: solid 0.2px white;
+}
+/* fin footer*/    
+/* .copyright*/
+.copyright {
+  background-color: #000000;
+  color: #5a666f;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fin .copyright*/
 
 /*# sourceMappingURL=style.css.map */

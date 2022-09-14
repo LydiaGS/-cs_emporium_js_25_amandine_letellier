@@ -11,21 +11,21 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="Body">
     <!-- navbar "emporium"-->
     <header>
         <br>
         <h1 class="emporium">emporium.</h1>
         <br>
-        <section class="center bg-transparent">
-            <div class="pos-f-t  bg-white">
-                <div class="collapse  bg-light" id="navbarToggleExternalContent">
-                    <div class=" bg-white p-4">
+        <section class="center">
+            <div class="pos-f-t ">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="p-4">
                         <h4 class="text-white">Collapsed content</h4>
                         <span class="text-muted">Toggleable via the navbar brand.</span>
                     </div>
                 </div>
-                <nav class="navbar navbar-dark bg-white">
+                <nav class="navbar">
                     <div class="btn_nav">
                         <button class="navbar-toggler bg-gray " type="button border-secondary" data-toggle="collapse"
                             data-target="#navbarToggleExternalContent border-secondary"
@@ -33,8 +33,8 @@
                             aria-label="Toggle navigation border-secondary">
                             <span class="navbar-toggler-icon border-secondary"></span>
                         </button>
-                        <div class="navbarr_all bg-white">
-                            <div class="navbarre bg-transparent">
+                        <div class="navbarr_all">
+                            <div class="navbarre">
                                 <a class="nav" href="#">HOME</a>
                                 <a class="nav" href="#">PRODUCT</a>
                                 <a class="nav" href="#">BLOG</a>
@@ -54,27 +54,226 @@
         </section>
     </header>
     <br>
+    <!-- fin de la avbar "emporium" -->
+    <!--section shop_at-->
     <section class="Shop_at">
-        <div class="shop_at_emporium">
-        <h3 class="titre_h3">shop at</h3>
-        <img titre_h2 src="./public/IMAGE/products/img/logo.png" alt="">
-        <p class="paragraphe_1">A wonderful serenity has taken possession of my entire soul, like these sweet<br>
-        mornings of spring which i enjoy with my.
-        </p>
-        <button class="sale_items">SALE ITEMS</button>
+        <div class="flex">
+            <div class="shop_at_emporium">
+                <h3 class="titre_h3">shop at</h3>
+                <img titre_h2 src="./public/IMAGE/products/img/logo.png" alt="">
+                <p class="paragraphe_1">A wonderful serenity has taken possession of my entire soul, like these
+                    sweet<br>
+                    mornings of spring which i enjoy with my.
+                </p>
+                <button class="sale_items">SALE ITEMS</button>
+            </div>
+            <div class="image_t">
+                <img src="./public/IMAGE/products/img/slider-1.jpg" alt="">
+            </div>
         </div>
     </section>
+    <!-- fin de la section shop_at-->
+    <!--Section 3images-->
     <section>
         <br><br>
-        <div class="trois_images">
-            <img class="imge1" src="./public/IMAGE/products/services/service-1.jpg" alt="service-1">
-            <img class="img2" src="./public/IMAGE/products/services/service-2.jpg" alt="service-2">
-            <img class="img3" src="./public/IMAGE/products/services/slider-3.jpg" alt="slider-3">
+        <div class="container-fluid trois_images d-flex justify-content-center gap-5 flex-wrap">
+            <div class=" texte_9 col-3 images1 d-flex justify-content-center flex-column align-items-center">
+                <span class="txt0 ">Living Room</span>
+                <img class="imge1" src="./public/IMAGE/products/services/service-1.jpg" alt="service-1">
+            </div>
+            <div class=" texte_9 col-3 images2 d-flex justify-content-center flex-column align-items-center">
+                <span class="txt0 ">Sale Items</span>
+                <img class="img2" src="./public/IMAGE/products/services/service-2.jpg" alt="service-2">
+            </div>
+            <div class="texte_9 col-3  images3 d-flex justify-content-center flex-column align-items-center">
+                <span class="txt0">Clothes</span>
+                <img class="img3" src="./public/IMAGE/products/services/slider-3.jpg" alt="slider-3">
+            </div>
         </div>
     </section>
-    
-    <!-- fin de la avbar "emporium" -->
-    <script src="./public/JAVASCRIPTS/MAINS.JS"></script>
+    <!-- fin de la Section 3images-->
+    <br><br>
+    <!--recent products-->
+<section class="section_JS">
+
+</section>
+    <!--fin recent products -->
+    <!--Discover Thousands Of Great Products-->
+    <section>
+        <div class="Discover_Thousands_Of_Great_Products d-flex flex-column">
+            <div class="margine">
+                <h2>Discover Thousands Of Great Products</h2>
+                <button class="learn_more">LEAREN MORE</button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- fin Discover Thousands Of Great Products-->
+    <!--carouselle-->
+    <section>
+        <div id="titre_caroussel">
+            <h2 class="d-flex justify-content-center"> Hot Fashion products </h2>
+            <br>
+            <div class="carousel">
+                <div class="carousel-panell_1">
+                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-luxry-sofa.jpg">
+                    <br><br>
+                    <p class="title_01">Luxury Sofa</p>
+                    <div class="rondes">
+                    <p class="colo_red">$600.00</p>
+                    </div>
+                </div>
+                <div class="carousel-panell_2">
+                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-gloves.jpg">
+                    <br><br>   
+                    <p class="title_01">Leather product-gloves</p>
+                    <div class="cerle1">
+                    <div class="rounds">sale !</div>
+                    <div class="rondes">        
+                        <p class="change">$34.000</p><p class="colo_red">$27.00</p>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-panell_3">
+                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-cups.jpg">
+                    <br><br>   
+                    <p class="title_01">colorful bowls</p>  
+                    <div class="rondes">
+                    <p class="colo_red">$18.00</p>
+                    </div>
+
+                </div>
+                <div class="carousel-panell">
+                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-bag.jpg">
+                    <br><br>
+
+                   
+        
+                    <p class="title_01">women bag</p> 
+                        <div class="cercles_reds">
+                        <div class="cercle2">        
+                        <div class="rounds">sale !</div>
+                  </div>
+               
+                    <div class="rondes">
+                        <p class="change">$420.000</p>
+                        <p class="colo_red">$350.00</p>
+                    </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <br>
+            <div class="bulle">
+
+                <div class="boule"></div>
+                <div class="boule"></div>
+                <div class="boule"></div>
+                <div class="boule"></div>
+            </div>
+            <br> <br>
+        </div>
+    </section>
+    <!-- fin carouselle-->
+    <!--fontowsone-->
+    <section>
+        <div class="fontowsone_3">
+            <div class="fontowsone">
+                <br>
+                <i class="fa-sharp fa-solid fa-circle-check d-flex justify-content-center"></i>
+                <h3 class="t1 titre_3-3 d-flex justify-content-center">TRSUTED BY 10,000+ CUSTOMERS</h3>
+                <br>
+                <p class="txt d-flex justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>
+                    Similique excepturi nesciunt id voluptate doloremque <br>
+                    dolore!</p>
+                <button class="font d-flex justify-content-center">LEAREN MORE</button>
+            </div>
+            <div class="fontowsone">
+                <br>
+                <i class="fa-sharp fa-solid fa-paper-plane d-flex justify-content-center"></i>
+                <h3 class="t1 titre_3-3 d-flex justify-content-center">VERY FAST SHIPPING</h3>
+                <br>
+                <p class="txt d-flex justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>
+                    Similique excepturi nesciunt id voluptate doloremque <br>
+                    dolore!</p>
+                <br>
+                <button class="font d-flex justify-content-center">LEAREN MORE</button>
+            </div>
+            <div class="fontowsone">
+                <br>
+                <i class="fa-sharp fa-solid fa-circle-check d-flex justify-content-center"></i>
+                <h3 class="t1 titre_3-3 d-flex justify-content-center">TRSUTED BY 10,000+ CUSTOMERS</h3>
+                <br>
+                <p class=" txt d-flex justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>
+                    Similique excepturi nesciunt id voluptate doloremque <br>
+                    dolore!</p>
+                <button class="font d-flex justify-content-center align-items-center">LEAREN MORE</button>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- fin fontowsone-->
+    <!--footer-->
+    <section>
+        <footer>
+            <br>
+            <div class="footer">
+                <div class=" About_us">
+                    <h3>About Us</h3>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing <BR>
+                    elit. Eos, similique? Consequatur similique possimus est, <br>
+                    soluta ex dignissimos laboriosam<br>
+                    dolor repellendus culpa? Natus facilis <br>
+                    quo debitis consequatur laborum harum voluptatibus amet.
+                </div>
+                <div class="recent_posts">
+                    <h3>recent posts</h3>
+                    <p>>Hello World</p>
+                    <p>>Worlderful sernity has taken</p>
+                    <p>>In my soul and absorb its power</p>
+                    <p>>i
+
+                        <head>hear the buzz of the little</head>
+                    </p>
+                </div>
+                <div class="tag_cloud">
+                    <div class="ligne_1">
+                        <h3>tag cloud</h3>
+                        <button class="partie_1">business</button>
+                        <button class="partie_2">confidence</button>
+                        <button class="partie_3">gadgets</button>
+                    </div>
+                    <br>
+                    <div class="ligne_1">
+                        <button class="partie_4">indentity</button>
+                        <button class="partie_5">logo</button>
+                        <button class="partie_6">photography</button>
+                    </div>
+                    <br>
+                    <div class="ligne_1">
+                        <button class="partie_7">time</button>
+                        <button class="partie_8">trips</button>
+                        <button class="partie_9">works</button>
+                    </div>
+                    <div class="ligne_1">
+                        <button class="partie_10">works space</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--footer-->
+    <section>
+        <div class="copyright">
+            <br>
+            <p> COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
+        </div>
+    </section>
+
+    <script src="./public/JAVASCRIPTS/MAINS.JS" type="module"></script>
 </body>
 
 </html>
