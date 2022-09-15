@@ -2,7 +2,7 @@
 let btn_1 = document.getElementsByClassName('btn_1')[0]
 let btn_2 = document.getElementsByClassName('btn_2')[0]
 let btn_nav = document.getElementsByClassName('btn_nav')[0]
-let body = document.getElementsByClassName('Body')[0]
+let body = document.getElementsByTagName('body')[0]
 let nav = document.getElementsByClassName('nav')[0]
 let nav2 = document.getElementsByClassName('nav')[1]
 let nav3 = document.getElementsByClassName('nav')[2]
@@ -18,7 +18,6 @@ let t3= document.getElementsByClassName('t1')[2]
 let txt1 = document.getElementsByClassName('txt')[0]
 let txt2 = document.getElementsByClassName('txt')[1]
 let txt3 = document.getElementsByClassName('txt')[2]
-let section = document.getElementsByClassName('section_JS')[0];
 let titres= document.createElement('h1');
 let creationDiv = document.createElement('div');
 let creationDiv1 = document.createElement('div');
@@ -82,7 +81,14 @@ let titres8= document.createElement('p')
 let texte8=document.createTextNode('$420.00')
 let grande_div5 =document.createElement('div')
 
-export default{
+let trois_image_section = document.getElementById("trois-images")
+let discover_section = document.getElementById("discover-section")
+let btn_connexions = document.querySelectorAll(".btn-connexion")
+let modal_container = document.getElementById("modal-container")
+let carousel_tableau = document.querySelectorAll("[name='carousel[]']")
+
+
+export default {
     btn_1,
     btn_2,
     btn_nav,
@@ -102,7 +108,6 @@ export default{
     txt1,
     txt2,
     txt3,
-    section,
     titres,
     creationDiv,
     textes,
@@ -162,7 +167,12 @@ export default{
     titres8,
     texte8,
     grande_div5,
-    div_20
+    div_20,
+    trois_image_section,
+    discover_section,
+    btn_connexions,
+    modal_container,
+    carousel_tableau
     }
 
 

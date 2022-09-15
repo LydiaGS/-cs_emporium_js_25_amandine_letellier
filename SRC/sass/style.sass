@@ -1,8 +1,88 @@
 @import _fonts
+// https://github.com/dangvanthanh/carousel.sass
+@import carousel
 
+@include carousel(4)
+
+// .body-body
+//     @media (max-width: 1440px) { 
+//         .body-body{
+//             display: flex
+//            flex-wrap: warp
+//             }
+//          }
 body
     font-family: police
-    --text-color: white
+    --color-text: black
+    --color-text-image: white
+    --color-background: white
+
+form
+    > div
+        display: grid
+        grid-template-columns: 1fr 2fr
+        padding: 1em 0
+    flex-direction: column
+    display: flex
+    .taille
+        height: 150px
+        width: 150px
+.img_style
+    height: 350px !important
+    width: 450px !important
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+        transform: scale(1.05)
+        transition: 0.7s
+
+.txte_style
+    display: flex
+    justify-content: center 
+    align-items: center
+    text-align: center
+.para_texte
+    display: flex
+    justify-content: center 
+    align-items: center
+    text-align: center
+.prix_texte
+    color: red
+    display: flex
+    justify-content: center 
+    align-items: center
+    text-align: center
+
+#modal-container
+    display: none
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(0,0,0,.5)
+    z-index: 100
+    padding: 5em
+    width: 50em
+    margin: 0 auto
+    .modal-connexion-form
+        background-color: var(--color-background)
+        border-radius: 1em
+        margin: 5em auto
+        padding: 2em
+
+.flex-row
+    display: flex
+    flex-direction: row
+
+.flex-col
+    display: flex
+    flex-direction: column
+
+.grid-container
+    display: grid
+    gap: 1em
 
     /*navbarre*/
 .emporium
@@ -13,19 +93,24 @@ body
     font-size: 45px
     font-weight: bold
 .pos-f-t 
-    background-color: white  
+    // background-color: white  
+        background-color: #ffffff51
 .center
     justify-content: center
     align-items: center
     display: flex
     gap: 10em
-    background-color: white
+    background-color: #ffffff51
     position: fixed-end
     color: #aaafb8
     text-decoration: none
+    position: sticky !important
+    top: 0 !important
+
 .btn_nav
     gap: 15em
     display: flex
+    background-color: #ffffff51
 .nav
     color: black
     list-style-type: none
@@ -38,6 +123,9 @@ body
     text-decoration: none
     // background-color: white
     text-align: center
+    position: sticky !important
+    top: 0 !important
+
 .navbarr_all
     gap: 2em
     justify-content: left
@@ -45,6 +133,14 @@ body
     align-items: left
     text-decoration: none
     // background-color: white
+    position: sticky !important
+    top: 0 !important
+    background-color: #ffffff51
+
+nav
+    position: sticky !important
+    top: 0 !important
+    background-color: #ffffff51
 .navbarre
     gap: 2em
     justify-content: left
@@ -53,9 +149,14 @@ body
     text-align: left
     // background-color: transparent
     text-decoration: none
+    position: sticky !important
+    top: 0 !important
+    background-color: #ffffff51
 .btn_all
     gap: 0.5em
     display: flex
+    position: sticky !important
+    top: 0 !important
 .connexion 
     border: #6c757d
     background-color: #6c757d
@@ -66,6 +167,8 @@ body
     align-items: center
     text-align: center
     display: flex
+    position: sticky !important
+    top: 0 !important
 .btn_1
     height: 25px
     width: 25px
@@ -111,35 +214,48 @@ body
     /* fin section shop_at*/
 
 /* Section 3images*/
-.texte_9
-    position: relative
-    height: 400px
+#trois-images
+    margin: 3em 0
+    grid-template-columns: 1fr 1fr 1fr
+    > div
+        position: relative
+        height: 20em
+        background-position: center
+        background-size: cover
+        > div
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            text-align: center
+            padding-top: 6.5em
+            > span
+                color: var(--color-text-image)
+                font-size: 3em
+                border-bottom: .08em solid var(--color-text-image)
+                padding: 0 1em .2em
+        &:hover
+            > div
+                background-color: rgba(0, 0, 0, .4)
+                >span
+                    padding: 0 0 .2em
+        &.image-1
+            background-image: url("../IMAGE/products/services/service-1.jpg")
+        &.image-2
+            background-image: url("../IMAGE/products/services/service-2.jpg")
+        &.image-3
+            background-image: url("../IMAGE/products/services/slider-3.jpg")
 
-.img2
-    position: absolute
-    width: 100%
-    top: 0
-    height: 100%
-.txt0
-    z-index: 1
-    color: var(--text-color)
-    font-size: 50px
-    border-bottom: .05em solid var(--text-color)
-    padding: 0 1.2em
-
-.imge1
-    position: absolute
-    width: 100%
-    top: 0
-    height: 100%
-
-.img3
-    position: absolute
-    width: 100%
-    top: 0
-    height: 100%
-    // position: absolute
 /*  fin Section 3images*/
+
+.section-js
+    margin: 5em 0
+    > div
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin:  0 15em
+        gap: 2em
 
 /* recent product*/
 .titre_h2_2
@@ -259,6 +375,29 @@ body
     justify-content: center
     align-items: center        
 /* fin carouselle*/
+
+// carouselle olivier
+.carousel__item
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 1em
+    height: 50em
+    > div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        > h4
+            font-size: 2.5em
+        > span
+            font-size: 1.2em
+            > .barrer
+                text-decoration: line-through
+                color: red
+                padding-right: .5em
+// fin carouselle olivier
+
+
 /* learne more 3div*/
 .fontowsone_3
     display: flex
@@ -268,8 +407,12 @@ body
 .fontowsone
     background-color: #f3f2f3
     height: 400px
-    width: 550PX
-
+    width: 500px
+    &:hover 
+        background-color: #de4846
+        color: withe
+// &:hover
+    
 .fa-sharp
     height: 80px
     color: #70757c

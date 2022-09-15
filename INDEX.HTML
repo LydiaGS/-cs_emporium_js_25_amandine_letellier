@@ -6,35 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/CSS/STYLE.CSS">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
 </head>
 
-<body class="Body">
+<body class="body-body">
+    <div id="modal-container">
+        <div class="modal-connexion-form">
+            <h3>Formulaire de connexion</h3>
+            <form>
+                <div>
+                    <label for="user">Utilisateur</label>
+                    <input type="text" name="user" placeholder="Amandine">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" placeholder="****">
+                </div>
+                <button class="btn-connexion">Connexion</button>
+            </form>
+        </div>
+    </div>
+</section>
     <!-- navbar "emporium"-->
     <header>
         <br>
         <h1 class="emporium">emporium.</h1>
         <br>
-        <section class="center">
-            <div class="pos-f-t ">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="p-4">
-                        <h4 class="text-white">Collapsed content</h4>
-                        <span class="text-muted">Toggleable via the navbar brand.</span>
+    </header>
+        <section class="center sticky-top">
+            <div class="pos-f-t sticky-top ">
+                <div class="collapse sticky-top" id="navbarToggleExternalContent">
+                    <div class="p-4 sticky-top">
+                        <h4 class="text-white sticky-top">Collapsed content</h4>
+                        <span class="text-muted sticky-top">Toggleable via the navbar brand.</span>
                     </div>
                 </div>
-                <nav class="navbar">
-                    <div class="btn_nav">
-                        <button class="navbar-toggler bg-gray " type="button border-secondary" data-toggle="collapse"
+                <nav class="navbar sticky-top">
+                    <div class="btn_nav sticky-top">
+                        <button class="navbar-toggler bg-gray sticky-top" type="button border-secondary" data-toggle="collapse"
                             data-target="#navbarToggleExternalContent border-secondary"
                             aria-controls="navbarToggleExternalContent border-secondary" aria-expanded="false"
                             aria-label="Toggle navigation border-secondary">
-                            <span class="navbar-toggler-icon border-secondary"></span>
+                            <span class="navbar-toggler-icon border-secondary sticky-top"></span>
                         </button>
-                        <div class="navbarr_all">
-                            <div class="navbarre">
+                        <div class="navbarr_all sticky-top">
+                            <div class="navbarre sticky-top">
                                 <a class="nav" href="#">HOME</a>
                                 <a class="nav" href="#">PRODUCT</a>
                                 <a class="nav" href="#">BLOG</a>
@@ -43,16 +61,15 @@
                                 <a class="nav" href="#">CONTACT</a>
                             </div>
                         </div>
-                        <div class="btn_all">
+                        <div class="btn_all sticky-top">
                             <button class="btn_1 bg-light border-secondary"></button>
                             <button class="btn_2"></button>
-                            <button class="connexion">Connexion</button>
+                            <button class="btn-connexion">Connexion</button>
                 </nav>
             </div>
             </div>
             </div>
         </section>
-    </header>
     <br>
     <!-- fin de la avbar "emporium" -->
     <!--section shop_at-->
@@ -74,32 +91,16 @@
     </section>
     <!-- fin de la section shop_at-->
     <!--Section 3images-->
-    <section>
-        <br><br>
-        <div class="container-fluid trois_images d-flex justify-content-center flex-wrap">
-            <div class=" texte_9 col-3 images1 d-flex justify-content-center flex-column align-items-center">
-                <span class="txt0 ">Living Room</span>
-                <img class="imge1" src="./public/IMAGE/products/services/service-1.jpg" alt="service-1">
-            </div>
-            <div class=" texte_9 col-3 images2 d-flex justify-content-center flex-column align-items-center">
-                <span class="txt0 ">Sale Items</span>
-                <img class="img2" src="./public/IMAGE/products/services/service-2.jpg" alt="service-2">
-            </div>
-            <div class="texte_9 col-3  images3 d-flex justify-content-center flex-column align-items-center">
-                <span class="txt0">Clothes</span>
-                <img class="img3" src="./public/IMAGE/products/services/slider-3.jpg" alt="slider-3">
-            </div>
-        </div>
+    <section id="trois-images" class="grid-container">
+        <div class="image-1"><div><span>Living Room</span></div></div>
+        <div class="image-2"><div><span>Sale Items</span></div></div>
+        <div class="image-3"><div><span>Clothes</span></div></div>
     </section>
     <!-- fin de la Section 3images-->
-    <br><br>
-    <!--recent products-->
-<section class="section_JS">
-
-</section>
+    <!-- recent products-->
     <!--fin recent products -->
     <!--Discover Thousands Of Great Products-->
-    <section>
+    <section id="discover-section">
         <div class="Discover_Thousands_Of_Great_Products d-flex flex-column">
             <div class="margine">
                 <h2>Discover Thousands Of Great Products</h2>
@@ -109,74 +110,62 @@
     </section>
     <br>
     <!-- fin Discover Thousands Of Great Products-->
-    <!--carouselle-->
+       <!-- carouselle-->
     <section>
-        <div id="titre_caroussel">
-            <h2 class="d-flex justify-content-center"> Hot Fashion products </h2>
-            <br>
-            <div class="carousel">
-                <div class="carousel-panell_1">
-                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-luxry-sofa.jpg">
-                    <br><br>
-                    <p class="title_01">Luxury Sofa</p>
-                    <div class="rondes">
-                    <p class="colo_red">$600.00</p>
+        <div class="carousel">
+            <input type="radio" id="carousel-1" name="carousel[]" checked>
+            <input type="radio" id="carousel-2" name="carousel[]">
+            <input type="radio" id="carousel-3" name="carousel[]">
+            <input type="radio" id="carousel-4" name="carousel[]">
+            <ul class="carousel__items py-5">
+                <li class="carousel__item">
+                    <div>
+                        <img src="./public/IMAGE/products/products_mini/product-luxry-sofa.jpg" alt="gloves">
+                        <h4>luxry-sofa</h4>
+                        <span><span class="barrer">$600.00</span>
                     </div>
-                </div>
-                <div class="carousel-panell_2">
-                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-gloves.jpg">
-                    <br><br>   
-                    <p class="title_01">Leather product-gloves</p>
-                    <div class="cerle1">
-                    <div class="rounds">sale !</div>
-                    <div class="rondes">        
-                        <p class="change">$34.000</p><p class="colo_red">$27.00</p>
+                    <div>
+                        <img class="taille" src="./public/IMAGE/products/products_mini/product-gloves.jpg" alt="gloves">
+                        <h4>Leather gloves</h4>
+                        <span><span class="barrer">$34.00</span> $27.00</span>
                     </div>
-                </div>
-                </div>
-                <div class="carousel-panell_3">
-                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-cups.jpg">
-                    <br><br>   
-                    <p class="title_01">colorful bowls</p>  
-                    <div class="rondes">
-                    <p class="colo_red">$18.00</p>
+                    <div>
+                        <img class="taille" src="./public/IMAGE/products/products_mini/product-cups.jpg" alt="gloves">
+                        <h4>Colorful Bow</h4>
+                        <span><span class="prix"> $18.00</span>
                     </div>
-
-                </div>
-                <div class="carousel-panell">
-                    <img class="carousel_image" src="./public/IMAGE/products/products_mini/product-bag.jpg">
-                    <br><br>
-
-                   
-        
-                    <p class="title_01">women bag</p> 
-                        <div class="cercles_reds">
-                        <div class="cercle2">        
-                        <div class="rounds">sale !</div>
-                  </div>
-               
-                    <div class="rondes">
-                        <p class="change">$420.000</p>
-                        <p class="colo_red">$350.00</p>
+                    <div>
+                        <img class="taille" src="./public/IMAGE/products/products_mini/product-bag.jpg" alt="gloves">
+                        <h4>Women Bag</h4>
+                        <span><span class="barrer">$420.00</span> $350.00</span>
                     </div>
+                </li>
+                <li class="carousel__item">
+                    <div>
+                        <img class="taille" src="./public/IMAGE/products/products_mini/product-tshitr.jpg" alt="luxry-sofa">
+                        <span>Minimal T-shirt</span>
+                        <span class="prix">$15.00</span>
                     </div>
-                  
-                </div>
+                    <div>
+                        <img class="
+                        " src="./public/IMAGE/products/products_mini/product-plates.jpg" alt="gloves">
+                        <span>plates set</span>
+                        <span class="prix">$30.00</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="carousel__nav">
+                <label for="carousel-1"></label>
+                <label for="carousel-2"></label>
+                <label for="carousel-3"></label>
+                <label for="carousel-4"></label>
             </div>
-            <br>
-            <div class="bulle">
-
-                <div class="boule"></div>
-                <div class="boule"></div>
-                <div class="boule"></div>
-                <div class="boule"></div>
-            </div>
-            <br> <br>
         </div>
     </section>
-    <!-- fin carouselle-->
+
+    <!-- fin carouselle -->
     <!--fontowsone-->
-    <section>
+    <section class="py-5">
         <div class="fontowsone_3">
             <div class="fontowsone">
                 <br>
