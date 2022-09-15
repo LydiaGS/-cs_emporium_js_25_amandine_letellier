@@ -228,6 +228,13 @@ form > div {
   padding: 2em;
 }
 
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  #trois-images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -495,6 +502,13 @@ nav {
   justify-content: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .Discover_Thousands_Of_Great_Products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .learn_more {
   border: solid 1px #DC143C;
   background-color: #DC143C;
