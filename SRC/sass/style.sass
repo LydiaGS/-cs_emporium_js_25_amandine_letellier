@@ -1,4 +1,4 @@
-@import _fonts
+@import _fontswrap
 // https://github.com/dangvanthanh/carousel.sass
 @import carousel
 
@@ -104,6 +104,11 @@ form
 .pos-f-t 
     // background-color: white  
         background-color: #ffffff51
+@media screen and (min-width: 320px) and (max-width: 900px)        
+    .center
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
 .center
     justify-content: center
     align-items: center
@@ -115,7 +120,11 @@ form
     text-decoration: none
     position: sticky !important
     top: 0 !important
-
+@media screen and (min-width: 320px) and (max-width: 900px)        
+    .flex
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
 .btn_nav
     gap: 15em
     display: flex
