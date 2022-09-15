@@ -159,9 +159,10 @@ form > div {
   grid-template-columns: 1fr 2fr;
   padding: 1em 0;
 }
-form .taille {
-  height: 150px;
-  width: 150px;
+
+.taille {
+  height: 300px !important;
+  width: 550px !important;
 }
 
 .img_style {
@@ -174,6 +175,15 @@ form .taille {
 .img_style:hover {
   transform: scale(1.05);
   transition: 0.7s;
+}
+
+.taille {
+  height: 150px;
+  width: 150px;
+}
+
+.rdn {
+  color: black !important;
 }
 
 .txte_style {
@@ -614,7 +624,6 @@ nav {
   color: red;
   padding-right: 0.5em;
 }
-
 /* learne more 3div*/
 .fontowsone_3 {
   display: flex;
